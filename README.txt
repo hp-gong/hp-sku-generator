@@ -1,21 +1,45 @@
-# simple-sku-generator
+=== Simple SKU Generator ===
 
-Creating SKU for products
+Contributors: hpgong
+Donate link: N/A
+Tags: sku, create sku, sku products
+Version: 1.0.0
+Requires at least: 4.8
+Tested up to: 4.8 
+Stable tag: 1.0.0
+Author: H.P. Gong
+Author URI: https://github.com/hp-gong
+GitHub Plugin URI: https://github.com/hp-gong/hp-sku-generator
+GitHub Branch: master
+License: GPL-3.0+
+License URI: https://www.gnu.org/licenses/gpl-3.0.txt
 
 == Description ==
 
 The purpose of Simple SKU Generator plugin is to create SKU for the products. This will also keep the old SKU and also create new SKU for products that doesn’t have SKU. Read the instructions on the sku-overview.pdf file for more in detail how to keep the old SKU and create the new SKU at once. 
 
-== Installation == 
-
+== Installation ==
+ 
 1. Upload the plugin from your WordPress Plugins section
-2. Activate the plugin through the 'Plugins' menu in WordPress
+2. Activate the plugin through the 'Plugins' menu in WordPress 
+
+== Changelog == 
+
+N/A
+
+== Upgrade Notice ==
+
+N/A
+
+== Screenshots == 
+
+N/A
 
 == Instructions ==
 
-The instructions is in the master zip file
+Click here <a href="https://github.com/HP-Gong/hp-sku-generator/raw/master/sku-overview.pdf">sku-overview.pdf</a> to download the instructions
 
-Read the sku-overview.pdf for more details how the plugin works 
+Read the sku-overview.pdf for more details how the plugin works
 
 These are the 4 current browsers that currently support/display this plugin correctly
 
@@ -64,24 +88,9 @@ The Export CSV button will export the CSV. There will be no header on the CSV fi
 
 Q. How do I upload the CSV file that contain the SKU for the products and keep the old SKU?
 
-A. Before you upload the CSV file, you have to backup or export your current products because if you are not sure if you are uploading the CSV file correctly or make a mistake. You can always import the current products CSV file and redo this again correctly. You have to download a import plugin to upload the SKU CSV file. There are alot of import plugins for woocommerce to choose. I would download and try this import plugin: <a href=”https://wordpress.org/plugins/woocommerce-csvimport/”>Woocommerce CSV Import</a>. It’s simple to used and understand. 
-
-<b>Everytime you open a CVS file it will ask you to save the file twice, just save it twice.</b> 
+A. Before you upload the CSV file, you have to backup or export your current products because if you are not sure if you are uploading the CSV file correctly or make a mistake. You can always import the current products CSV file and redo this again correctly. You have to download a import plugin to upload the SKU CSV file. There are alot of import plugins for woocommerce to choose. I would download and try this import plugin: <a href=”https://wordpress.org/plugins/woocommerce-csvimport/”>Woocommerce CSV Import</a>. It’s simple to used and understand. <b>Everytime you open a CVS file it will ask you to save the file twice, just save it twice.</b> 
 
 Q. What happened if I deactivate the plugin or delete the plugin?
 
 A. If you deactivate the plugin it will stay on the plugin page and the SKU tables will be still on wordpress database. But if you delete/remove the plugin it will delete the folders, files and also the tables from the
 wordpress database.
-
-
-== Languages and Software ==
-
-I used Indesign to create the sku-overview.pdf file.
-
-These are the languages and software I used for the Simple SKU Generator plugin:
-
-Language: HTML, CSS, JQuery, OOP PHP, Wordpress Codex
-
-Software: Dreamweaver, Photoshop and Indesign
-
--- HP Gong
