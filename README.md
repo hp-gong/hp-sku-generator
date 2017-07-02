@@ -4,7 +4,11 @@ Creating SKU for products
 
 == Description ==
 
-The purpose of Simple SKU Generator plugin is to create SKU for the products. This will also keep the old SKU and also create new SKU for products that doesn’t have SKU. Read the instructions on the sku-overview.pdf file for more in detail how to keep the old SKU and create the new SKU at once. 
+The purpose of Simple SKU Generator plugin is to create SKU for the products. This will also keep the old SKU and also create new SKU 
+
+for products that doesn’t have SKU. Read the instructions on the sku-overview.pdf file for more in detail how to keep the old SKU and 
+
+create the new SKU at once. 
 
 == Installation == 
 
@@ -48,7 +52,9 @@ For example, you choose 2000 as Start and 2300 as End, it is equal to 300 produc
 
 But you only have 213 products on your website. 
 
-You have to enter 2213 as Stop number. At 2213, it will stop creating SKU(s). If you dont do that it will keep generating SKU for no products assign to it.
+You have to enter 2213 as Stop number. At 2213, it will stop creating SKU(s). If you dont do that it will keep generating SKU for no 
+
+products assign to it.
 
 The Letters, Years, Start & End will create the SKU.
 
@@ -58,19 +64,31 @@ This will let the Simple SKU Generator know how many products you have on the we
 
 <b>Q. The sku display page has 2 buttons what are their function?</b>
 
-<b>A.</b> The Remove button will ONLY remove/delete all the SKUfrom the SKU table not from the Wordpress database. It won’t delete the products on your websites. It’s best to remove the SKU list after you export the CSV that contain th SKU. 
+<b>A.</b> The Remove button will ONLY remove/delete all the SKUfrom the SKU table not from the Wordpress database. It won’t delete the 
+
+products on your websites. It’s best to remove the SKU list after you export the CSV that contain th SKU. 
 
 The Export CSV button will export the CSV. There will be no header on the CSV file.
 
 <b>Q. How do I upload the CSV file that contain the SKU for the products and keep the old SKU?</b>
 
-<b>A.</b> Before you upload the CSV file, you have to backup or export your current products because if you are not sure if you are uploading the CSV file correctly or make a mistake. You can always import the current products CSV file and redo this again correctly. You have to download a import plugin to upload the SKU CSV file. There are alot of import plugins for woocommerce to choose. I would download and try this import plugin: <a href=”https://wordpress.org/plugins/woocommerce-csvimport/”>Woocommerce CSV Import</a>. It’s simple to used and understand. 
+<b>A.</b> <b>Before you upload the CSV file, you have to backup or export your current products because if you are not sure if you are 
 
-<b>Everytime you open a CVS file it will ask you to save the file twice, just save it twice.</b> 
+uploading the CSV file correctly or make a mistake. You can always import the current products CSV file and redo this again 
+
+correctly.</b> You have to download a import plugin to upload the SKU CSV file. There are alot of import plugins for woocommerce to 
+
+choose. I would download and try this import plugin: <a href=”https://wordpress.org/plugins/woocommerce-csvimport/”>Woocommerce CSV 
+
+Import</a>. It’s simple to used and understand. 
+
+<b>**** Everytime you open a CVS file it will ask you to save the file twice, just save it twice. ****</b> 
 
 <b>Q. What happened if I deactivate the plugin or delete the plugin?</b>
 
-<b>A.</b> If you deactivate the plugin it will stay on the plugin page and the SKU tables will be still on wordpress database. But if you delete/remove the plugin it will delete the folders, files and also the tables from the
+<b>A.</b> If you deactivate the plugin it will stay on the plugin page and the SKU tables will be still on wordpress database. But if 
+
+you delete/remove the plugin it will delete the folders, files and also the tables from the
 wordpress database.
 
 
