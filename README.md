@@ -63,7 +63,11 @@ The Export CSV button will export the CSV. There will be no header on the CSV fi
 
 <b>Q. How do I upload the CSV file that contain the SKU for the products and keep the old SKU?</b>
 
-<b>A.</b> <b>Before you upload the CSV file, you have to backup or export your current products because if you are not sure if you are uploading the CSV file correctly or make a mistake. You can always import the current products CSV file and redo this again correctly.</b> You have to download a import plugin to upload the SKU CSV file. There are alot of import plugins for woocommerce to choose. I would download and try this import plugin: <a href=”https://wordpress.org/plugins/woocommerce-csvimport/”>Woocommerce CSV Import</a>. It’s simple to used and understand. 
+<b>A.</b> Before you upload the CSV file, you have to backup or export your current products because if you are not sure if you are uploading the CSV file correctly or make a mistake. You can always import the current products CSV file and redo this again correctly.You have to download a import plugin to upload the SKU CSV file. There are alot of import plugins for woocommerce to choose. I would download and try this import plugin: <a href=”https://wordpress.org/plugins/woocommerce-csvimport/”>Woocommerce CSV Import</a>. It’s simple to used and understand. 
+
+<b>Reminder</b>: 
+
+<b>***  Before you upload the CSV file, you have to backup or export your current products because if you are not sure if you are uploading the CSV file correctly or make a mistake. You can always import the current products CSV file and redo this again correctly. ***</b> 
 
 <b>*** Everytime you open a CVS file it will ask you to save the file twice, just save it twice. ***</b> 
 
