@@ -1,6 +1,6 @@
 # simple-sku-generator
 
-Creating SKU for products 
+Creating SKU for products
 
 == Description ==
 
@@ -26,13 +26,13 @@ These are the 4 current browsers that currently support/display this plugin corr
 
 == Frequently Asked Questions == 
 
-Q. How many SKU can the Simple SKU Generator plugin create?
+<b>Q. How many SKU can the Simple SKU Generator plugin create?</b>
 
-A. The total numbers of SKU that Simple SKU Generator plugin can create is 4,500.
+<b>A.</b> The total numbers of SKU that Simple SKU Generator plugin can create is 4,500.
 
-Q. What are the Letter, Year, Start, End and Stop?
+<b>Q. What are the Letter, Year, Start, End and Stop?</b>
 
-A. There are 5 Letters (A-E).
+<b>A.</b> There are 5 Letters (A-E).
 
 Each Letter has an option to choose 1 of 5 Years (2016-2020).
 
@@ -56,21 +56,21 @@ For the Stop, as a reminder you have to enter the total amount of products you h
 
 This will let the Simple SKU Generator know how many products you have on the website, the Stop number will stop creating SKU.
 
-Q. The sku display page has 2 buttons what are their function?
+<b>Q. The sku display page has 2 buttons what are their function?</b>
 
-A. The Remove button will ONLY remove/delete all the SKUfrom the SKU table not from the Wordpress database. It won’t delete the products on your websites. It’s best to remove the SKU list after you export the CSV that contain th SKU. 
+<b>A.</b> The Remove button will ONLY remove/delete all the SKUfrom the SKU table not from the Wordpress database. It won’t delete the products on your websites. It’s best to remove the SKU list after you export the CSV that contain th SKU. 
 
 The Export CSV button will export the CSV. There will be no header on the CSV file.
 
-Q. How do I upload the CSV file that contain the SKU for the products and keep the old SKU?
+<b>Q. How do I upload the CSV file that contain the SKU for the products and keep the old SKU?</b>
 
-A. Before you upload the CSV file, you have to backup or export your current products because if you are not sure if you are uploading the CSV file correctly or make a mistake. You can always import the current products CSV file and redo this again correctly. You have to download a import plugin to upload the SKU CSV file. There are alot of import plugins for woocommerce to choose. I would download and try this import plugin: <a href=”https://wordpress.org/plugins/woocommerce-csvimport/”>Woocommerce CSV Import</a>. It’s simple to used and understand. 
+<b>A.</b> Before you upload the CSV file, you have to backup or export your current products because if you are not sure if you are uploading the CSV file correctly or make a mistake. You can always import the current products CSV file and redo this again correctly. You have to download a import plugin to upload the SKU CSV file. There are alot of import plugins for woocommerce to choose. I would download and try this import plugin: <a href=”https://wordpress.org/plugins/woocommerce-csvimport/”>Woocommerce CSV Import</a>. It’s simple to used and understand. 
 
 <b>Everytime you open a CVS file it will ask you to save the file twice, just save it twice.</b> 
 
-Q. What happened if I deactivate the plugin or delete the plugin?
+<b>Q. What happened if I deactivate the plugin or delete the plugin?</b>
 
-A. If you deactivate the plugin it will stay on the plugin page and the SKU tables will be still on wordpress database. But if you delete/remove the plugin it will delete the folders, files and also the tables from the
+<b>A.</b> If you deactivate the plugin it will stay on the plugin page and the SKU tables will be still on wordpress database. But if you delete/remove the plugin it will delete the folders, files and also the tables from the
 wordpress database.
 
 
