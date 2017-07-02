@@ -4,9 +4,7 @@ Creating SKU for products
 
 == Description ==
 
-The purpose of Simple SKU Generator plugin is to create SKU for the products. This will also keep the old SKU and also create new SKU for products that doesn’t have SKU. Read the instructions on the sku-overview.pdf file for more in detail how to keep the old SKU and 
-
-create the new SKU at once. 
+The purpose of Simple SKU Generator plugin is to create SKU for the products. This will also keep the old SKU and also create new SKU for products that doesn’t have SKU. Read the instructions on the sku-overview.pdf file for more in detail how to keep the old SKU and create the new SKU at once. 
 
 == Installation == 
 
@@ -50,9 +48,7 @@ For example, you choose 2000 as Start and 2300 as End, it is equal to 300 produc
 
 But you only have 213 products on your website. 
 
-You have to enter 2213 as Stop number. At 2213, it will stop creating SKU(s). If you dont do that it will keep generating SKU for no 
-
-products assign to it.
+You have to enter 2213 as Stop number. At 2213, it will stop creating SKU(s). If you dont do that it will keep generating SKU for no products assign to it.
 
 The Letters, Years, Start & End will create the SKU.
 
@@ -73,11 +69,8 @@ The Export CSV button will export the CSV. There will be no header on the CSV fi
 
 <b>Q. What happened if I deactivate the plugin or delete the plugin?</b>
 
-<b>A.</b> If you deactivate the plugin it will stay on the plugin page and the SKU tables will be still on wordpress database. But if 
-
-you delete/remove the plugin it will delete the folders, files and also the tables from the
+<b>A.</b> If you deactivate the plugin it will stay on the plugin page and the SKU tables will be still on wordpress database. But if you delete/remove the plugin it will delete the folders, files and also the tables from the
 wordpress database.
-
 
 == Languages and Software ==
 
