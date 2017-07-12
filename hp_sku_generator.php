@@ -172,8 +172,8 @@ if(!class_exists('HP_Simple_SKU')){
 		$w_year = intval( $_POST['w_year']);
 		if(! $w_year) {$w_year = '';}
 		
-		$w_item = intval( $_POST['w_item']);
-		if(! $w_item) {$w_item = '';}
+		$wcount = intval( $_POST['wcount']);
+		if(! $wcount) {$wcount = '';}
 		
 		$start = intval( $_POST['start']);
 		if(! $start) {$start = '';}
@@ -182,7 +182,7 @@ if(!class_exists('HP_Simple_SKU')){
 		if(! $end) {$end = '';}
 		
 		$w_letter = sanitize_text_field(trim($_POST['w_letter']));
-	    $w_year = sanitize_text_field(trim($_POST['w_year']));
+	        $w_year = sanitize_text_field(trim($_POST['w_year']));
 		$start = sanitize_text_field(trim($_POST['start']));
 		$end = sanitize_text_field(trim($_POST['end']));
 		$wcount = sanitize_text_field(trim($_POST['wcount']));
