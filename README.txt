@@ -25,11 +25,11 @@ The purpose of Simple SKU Generator plugin is to create SKU for the products. Th
 
 == Changelog == 
 
-= Version 1.1.0 - 07-30-2017 = 
+= 07-30-2017 - Version 1.1.0 = 
 * Maintenance.
 * Update codes on the plugin.
 
-= Version 1.0.0 - 07-02-2017 = 
+= 07-02-2017 - Version 1.0.0 = 
 * First release.
 
 == Upgrade Notice ==
