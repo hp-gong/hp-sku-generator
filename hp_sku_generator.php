@@ -5,7 +5,7 @@
  * Plugin Name: Simple SKU Generator
  * Plugin URI: https://github.com/hp-gong/hp-sku-generator
  * Description: Generate SKU for products.
- * Version: 1.0.0
+ * Version: 1.1.0
  * Author: H.P. Gong
  * Author URI: https://github.com/hp-gong/
  * GitHub Plugin URI: https://github.com/hp-gong/hp-sku-generator
