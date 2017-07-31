@@ -3,10 +3,10 @@
 Contributors: hpgong
 Donate link: N/A
 Tags: sku, create sku, sku products
-Version: 1.0.0
+Version: 1.1.0
 Requires at least: 4.8
 Tested up to: 4.8 
-Stable tag: 1.0.0
+Stable tag: 1.1.0
 Author: H.P. Gong
 Author URI: https://github.com/hp-gong
 GitHub Plugin URI: https://github.com/hp-gong/hp-sku-generator
@@ -24,6 +24,10 @@ The purpose of Simple SKU Generator plugin is to create SKU for the products. Th
 2. Activate the plugin through the 'Plugins' menu in WordPress 
 
 == Changelog == 
+
+= Version 1.1.0 - 07-30-2017 = 
+* Maintenance.
+* Update codes on the plugin.
 
 = Version 1.0.0 - 07-02-2017 = 
 * First release.
