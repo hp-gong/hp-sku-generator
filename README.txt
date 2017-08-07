@@ -4,8 +4,8 @@ Contributors: hpgong
 Donate link: N/A
 Tags: sku, create sku, sku products
 Version: 1.1.0
-Requires at least: 4.8
-Tested up to: 4.8 
+Requires at least: 4.8.1
+Tested up to: 4.8.1
 Stable tag: 1.1.0
 Author: H.P. Gong
 Author URI: https://github.com/hp-gong
