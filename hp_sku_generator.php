@@ -121,7 +121,19 @@ if(!class_exists('HP_Simple_SKU')){
 		// Verify Nonce Form
 	   public static function validate_form() {
         if(isset($_POST['btn_grey'])){
-        if (!isset($_POST['hp_display_sku_nonce']) || !wp_verify_nonce($_POST['hp_display_sku_nonce'], 'hp_sku_generator_s')){
+        if (!isset($_POST['hp_display_sku_nonce1']) || !wp_verify_nonce($_POST['hp_display_sku_nonce1'], 'hp_sku_generator_s2')){
+        wp_die('You do not have access to this page.');
+        }
+		else {
+	       $w_letter = sanitize_text_field(trim($_POST['w_letter']));
+           $w_year = sanitize_text_field(trim($_POST['w_year']));
+           $start = sanitize_text_field(trim($_POST['start']));
+           $end = sanitize_text_field(trim($_POST['end']));
+           $wcount = sanitize_text_field(trim($_POST['wcount']));
+		}
+		}
+		if(isset($_POST['btn_grey'])){
+        if (!isset($_POST['hp_display_sku_nonce2']) || !wp_verify_nonce($_POST['hp_display_sku_nonce2'], 'hp_sku_generator_s1')){
         wp_die('You do not have access to this page.');
         }
 		else {
@@ -154,35 +166,28 @@ if(!class_exists('HP_Simple_SKU')){
   }
 	// The hp_sku_generator function will create SKU for the products
     function hp_sku_generator(){
-
     if ($_SERVER['REQUEST_METHOD']== "POST"){
-
 		$_POST = filter_input(INPUT_POST, FILTER_SANITIZE_STRING);
 		$_POST = filter_input_array(INPUT_POST, FILTER_SANITIZE_STRING);
-
 		$w_letter = filter_input(INPUT_POST, 'w_letter', FILTER_SANITIZE_STRING, FILTER_REQUIRE_ARRAY);
 		$w_year = filter_input(INPUT_POST, 'w_year', FILTER_SANITIZE_STRING, FILTER_REQUIRE_ARRAY);
 		$start = filter_input(INPUT_POST, 'start', FILTER_SANITIZE_STRING, FILTER_REQUIRE_ARRAY);
 		$end = filter_input(INPUT_POST, 'end', FILTER_SANITIZE_STRING, FILTER_REQUIRE_ARRAY);
 		$wcount = filter_input(INPUT_POST, 'wcount', FILTER_SANITIZE_STRING);
-
 		$w_letter = intval( $_POST['w_letter']);
+		
 		if(! $w_letter) {$w_letter = '';}
-
 		$w_year = intval( $_POST['w_year']);
 		if(! $w_year) {$w_year = '';}
-
 		$wcount = intval( $_POST['$wcount']);
 		if(! $wcount) {$wcount = '';}
-
 		$start = intval( $_POST['start']);
 		if(! $start) {$start = '';}
-
 		$end = intval( $_POST['end']);
 		if(! $end) {$end = '';}
-
+		
 		$w_letter = sanitize_text_field(trim($_POST['w_letter']));
-	  $w_year = sanitize_text_field(trim($_POST['w_year']));
+	    $w_year = sanitize_text_field(trim($_POST['w_year']));
 		$start = sanitize_text_field(trim($_POST['start']));
 		$end = sanitize_text_field(trim($_POST['end']));
 		$wcount = sanitize_text_field(trim($_POST['wcount']));
@@ -195,7 +200,7 @@ if(!class_exists('HP_Simple_SKU')){
 		$wpdb->query($wpdb->prepare("INSERT INTO {$wpdb->prefix}woo_sku1 (w_id, w_title) VALUES (%s, %s)", $post->ID, $post->post_title));
 		}
 		}
-
+		
 		if($_POST){
 		for($w_item = $start; $i < $end; $w_item++) {
 		if ($w_item == $wcount){
@@ -216,14 +221,13 @@ if(!class_exists('HP_Simple_SKU')){
 	   echo '<p style="font-size: 14px;"><strong> Total Numbers of Products:<span style="margin: 0px 0px 0px 6px;">'.sanitize_text_field($post = count($posts)).'</span></strong> </p>';
 	   echo '<div style="width: 90%; height: 100%; border: 1px dashed #8e24aa; padding: 4px 4px 4px 4px;">';
 	   echo "<ol id='ol-tag' type='decimal'>";
-
 	   foreach($posts as $post) {
 	   echo '<li>'.sanitize_text_field($post->post_title).'</li>';
 	   }
-
 	   echo '</ol>';
 	   echo '</div>';
 	   echo '<form id="valida" name="valida" class="valida" action="" method="POST">';
+	   wp_nonce_field('hp_sku_generator_s1', 'hp_display_sku_nonce2');
 	   echo '<script type="text/javascript">$(document).ready(function() {$("#valida").valida();});</script><br>';
        echo '<fieldset>';
 	   echo '<div class="w_letter">';
@@ -258,7 +262,6 @@ if(!class_exists('HP_Simple_SKU')){
 	   }
 	   echo '</select>';
 	   echo '</div>';
-
 	   echo '<br>';
 	   echo '<div class="end">';
 	   echo '<label for="end">Select a Ending Number:</label>';
@@ -270,15 +273,13 @@ if(!class_exists('HP_Simple_SKU')){
 	   }
 	   echo '</select>';
 	   echo '</div>';
-
 	   echo '<br>';
 	   echo '<div class="wcount">';
 	   echo '<label for="wcount">Enter a Stop Number:</label>';
        echo '<input type="text" name="wcount" required id="wcount" data-required="Please Enter a Stop Number for products that are less than the number you selected." maxlength="4" style="width: 48px;" require class="at-required">';
 	   echo '</div>';
 	   echo '</fieldset><br>';
-
-	   wp_nonce_field('hp_sku_generator_s', 'hp_display_sku_nonce');
+	   wp_nonce_field('hp_sku_generator_s2', 'hp_display_sku_nonce1');
 	   echo '<input type="submit" class="btn_grey" name="btn_grey" value="Create">';
 	   echo '<input type="reset" class="btn_gray" name="btn_gray" value="Reset">';
 	   echo '</form>';
@@ -293,6 +294,7 @@ if(!class_exists('HP_Simple_SKU')){
 	  echo '<p style="font-size: 14px;"><strong> Total Numbers of Sku:<span style="margin: 0px 0px 0px 6px;">'.esc_js(esc_html(count($result1))).'</span></strong> </p>';
 	  echo '<br>';
 	  echo '<form method="POST" action="">';
+	  wp_nonce_field('hp_sku_generator_s2', 'hp_display_sku_nonce1');
 	  if($_SERVER['REQUEST_METHOD']=="POST") {
 	  if($_POST['remove_sku']) {
 	  global $wpdb;
@@ -334,7 +336,7 @@ if(!class_exists('HP_Simple_SKU')){
 	  </table>
 	  </div>
 	  <br>';
-	  wp_nonce_field('hp_sku_generator_s', 'hp_display_sku_nonce');
+	  wp_nonce_field('hp_sku_generator_s1', 'hp_display_sku_nonce2');
 	  global $wpdb;
 	  $result3 = $wpdb->get_results("SELECT s1.w_id, s1.w_title, s2.w_letter, s2.w_year, s2.w_item FROM {$wpdb->prefix}woo_sku1 AS s1 INNER JOIN {$wpdb->prefix}woo_sku2 AS s2 ON s1.id=s2.id");
 	  if(count($result3)){
