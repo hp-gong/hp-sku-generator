@@ -3,7 +3,7 @@
  * Simple SKU Generator
  *
  * Plugin Name: Simple SKU Generator
- * Plugin URI: https://github.com/hp-gong/hp-sku-generator
+ * Plugin URI: https://wordpress.org/plugins/simple-sku-generator/
  * Description: Generate SKU for products.
  * Version: 1.1.0
  * Author: H.P. Gong
@@ -120,7 +120,7 @@ if(!class_exists('HP_Simple_SKU')){
 
 		// Verify Nonce Form
 	   public static function validate_form() {
-        if(isset($_POST['btn_grey'])){
+        if(isset($_POST['btn_grey1'])){
         if (!isset($_POST['hp_display_sku_nonce1']) || !wp_verify_nonce($_POST['hp_display_sku_nonce1'], 'hp_sku_generator_s2')){
         wp_die('You do not have access to this page.');
         }
@@ -132,7 +132,7 @@ if(!class_exists('HP_Simple_SKU')){
            $wcount = sanitize_text_field(trim($_POST['wcount']));
 		}
 		}
-		if(isset($_POST['btn_grey'])){
+		if(isset($_POST['btn_grey1'])){
         if (!isset($_POST['hp_display_sku_nonce2']) || !wp_verify_nonce($_POST['hp_display_sku_nonce2'], 'hp_sku_generator_s1')){
         wp_die('You do not have access to this page.');
         }
@@ -280,8 +280,8 @@ if(!class_exists('HP_Simple_SKU')){
 	   echo '</div>';
 	   echo '</fieldset><br>';
 	   wp_nonce_field('hp_sku_generator_s2', 'hp_display_sku_nonce1');
-	   echo '<input type="submit" class="btn_grey" name="btn_grey" value="Create">';
-	   echo '<input type="reset" class="btn_gray" name="btn_gray" value="Reset">';
+	   echo '<input type="submit" class="btn_grey1" name="btn_grey1" value="Create">';
+	   echo '<input type="reset" class="btn_gray1" name="btn_gray1" value="Reset">';
 	   echo '</form>';
        }
 
@@ -344,7 +344,7 @@ if(!class_exists('HP_Simple_SKU')){
 	  echo '<input type="hidden" name="remove_sku" value="'.sanitize_text_field($row3->w_id).'" />';
 	  	  }
 	  }
-	  echo '<input type="submit" class="btn_grey" name="btn_grey" value="Remove Selected" />';
+	  echo '<input type="submit" class="btn_grey1" name="btn_grey1" value="Remove Selected" />';
 	  echo '<a id="export" style="display:inline-block;box-sizing:border-box;margin:5px;text-align:center;text-decoration:none;cursor:pointer;background-color:transparent;-webkit-transition:all .25s ease;-moz-transition:all .25s ease;-ms-transition:all .25s ease;-o-transition:all .25s ease;transition:all .25s ease;font-size:10px;font-size:0.9rem;line-height:35px;line-height:0.1rem;min-width:50px;min-width:5rem;padding:17px 15px;border-color:#666;border-width:1px;border-style:solid;border-radius:2.5px; border-color:#737373;background-color:#5b5b5b;color:#f5f5f5;" href="#">Export as CSV</a>';
 	  echo '</form>';
         }
