@@ -2,18 +2,18 @@
 
 Creating SKU for products
 
-== Description ==
+<b>== Description ==</b>
 
 The purpose of Simple SKU Generator plugin is to create SKU for the products. 
 Read the instructions on the sku-overview.pdf file for more in detail how to keep the old SKU and create the new SKU at once.
 
-== Installation ==
+<b>== Installation ==</b>
 
 1. Download and activate WooCommerce plugin which is required for Simple SKU Generator plugin to work.
 2. Upload the plugin from your WordPress Plugins section.
 3. Activate the plugin through the 'Plugins' menu in WordPress.
 
-== Instructions ==
+<b>== Instructions ==
 
 The instructions is in the master zip file
 
@@ -26,7 +26,7 @@ These are the 4 current browsers that currently support/display this plugin corr
 3. Opera (Current Version: 56 and up)
 4. Microsoft Edge (Current Version: 42 and up)
 
-== Frequently Asked Questions == 
+<b>== Frequently Asked Questions ==</b> 
 
 <b>Q. How many SKU can the Simple SKU Generator plugin create?</b>
 
@@ -68,7 +68,7 @@ The Export CSV button will export the CSV. There will be no header on the CSV fi
 
 <b>A.</b> If you deactivate the plugin it will stay on the plugin page and the SKU tables will be still on wordpress database. But if you delete/remove the plugin it will delete the folders, files and also the tables from the wordpress database.
 
-== Languages and Software ==
+<b>== Languages and Software ==</b>
 
 I used Indesign to create the sku-overview.pdf file.
 
