@@ -4,8 +4,8 @@ Contributors: hpgong
 Donate link: N/A
 Tags: sku, product sku, sku generator, sku id, sku numbers, woocommerce, inventory, items
 Version: 1.2.0
-Requires at least: 5.0.0
-Tested up to: 5.0.0
+Requires at least: 5.0.2
+Tested up to: 5.0.2
 Stable tag: 1.2.0
 Author: H.P. Gong
 Author URI: https://github.com/hp-gong
@@ -32,8 +32,8 @@ Read the instructions on the sku-overview.pdf file for more in detail how to kee
 * Modify & Update & Add codes on the plugin.
 * Update README file.
 * Update Instructions for the sku-overview.pdf.
-* TEST: Wordpress 5.0.0 - PASS
-* TEST: WooCommerce 3.5.2 - PASS
+* TEST: Wordpress 5.0.2 - PASS
+* TEST: WooCommerce 3.5.3 - PASS
 * Maintenance.
 
 = Version 1.1.1 - 01-01-2018 =
