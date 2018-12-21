@@ -4,12 +4,14 @@ Creating SKU for products
 
 == Description ==
 
-The purpose of Simple SKU Generator plugin is to create SKU for the products. This will also keep the old SKU and also create new SKU for products that doesn’t have SKU. Read the instructions on the sku-overview.pdf file for more in detail how to keep the old SKU and create the new SKU at once. 
+The purpose of Simple SKU Generator plugin is to create SKU for the products. 
+Read the instructions on the sku-overview.pdf file for more in detail how to keep the old SKU and create the new SKU at once.
 
-== Installation == 
+== Installation ==
 
-1. Upload the plugin from your WordPress Plugins section
-2. Activate the plugin through the 'Plugins' menu in WordPress
+1. Download and activate WooCommerce plugin which is required for Simple SKU Generator plugin to work.
+2. Upload the plugin from your WordPress Plugins section.
+3. Activate the plugin through the 'Plugins' menu in WordPress.
 
 == Instructions ==
 
@@ -17,64 +19,51 @@ The instructions is in the master zip file
 
 Read the sku-overview.pdf for more details how the plugin works 
 
-These are the 4 current browsers that currently support/display this plugin correctly
+These are the 4 current browsers that currently support/display this plugin correctly:
 
-1. FireFox (Current Version: 53.0.3 and up)
-2. Chrome (Current Version: 58.0 and up)
-3. Opera (Current Version: 45.0 and up)
-4. Internet Explorer (Last Version: 11)
+1. FireFox (Current Version: 64 and up)
+2. Chrome (Current Version: 71 and up)
+3. Opera (Current Version: 56 and up)
+4. Microsoft Edge (Current Version: 42 and up)
 
 == Frequently Asked Questions == 
 
 <b>Q. How many SKU can the Simple SKU Generator plugin create?</b>
 
-<b>A.</b> The total numbers of SKU that Simple SKU Generator plugin can create is 4,500.
+<b>A.</b> The total numbers of SKU that Simple SKU Generator plugin can create is varies between 6 to 13 digits/letters.
 
-<b>Q. What are the Letter, Year, Start, End and Stop?</b>
+<b>Q. What are the 4 options to used to created the SKU?</b>
 
-<b>A.</b> There are 5 Letters (A-E).
+<b>A.</b> (1) Month: 2 dights/Number(1): 1 dight/Number(3): 3 dight/Letter: 1 dight or Blank. (2) Year: 4 dight. (3) Date: 2 dight. (4) The amount of products you have: 4 dights.
 
-Each Letter has an option to choose 1 of 5 Years (2016-2020).
+<b>Q. What are the digits base on?</b>
 
-There are 3 Start option to choose from (1000-3000).
+<b>A.</b> The digits can be used to create barcode digits for EAN-8, UPC-A, EAN-13, CODE-39, CODE-93, EAN-128, CODE-128, ITF, QR, DMTX.
 
-Each Start has 3 option to choose from 3 set of End: (1100,1200,1300), (2100,2200,2300), (3100,3200,3300).
+<b>Q. What is a Blank?</b>
 
-If you choose 1000 as Start and 1200 as End, it is equal to 200 products. 1200-1000 = 200.
+<b>A.</b> The Blank purpose is to shorten the digits for EAN-8 (& UPC-C) or for your own preference. There are Blank for Month/Number(1)/Number(3)/Letter, Year, Date. Letter, Year, Date. 
 
-If you have less than 200 products then you have to enter the Stop number or enter 0 if you have 200.
+I wouldn't advise shorten less than 8 digits. 
 
-For example, you choose 2000 as Start and 2300 as End, it is equal to 300 products. 2300-2000 = 300.
+It's hard to read and follow which sku is assign to which product once scan the barcode.  
 
-But you only have 213 products on your website. 
+<b>Q. The Display SKU page has 2 buttons what are their function?</b>
 
-You have to enter 2213 as Stop number. At 2213, it will stop creating SKU(s). If you dont do that it will keep generating SKU for no products assign to it.
-
-The Letters, Years, Start & End will create the SKU.
-
-For the Stop, as a reminder you have to enter the total amount of products you have on your website. 
-
-This will let the Simple SKU Generator know how many products you have on the website, the Stop number will stop creating SKU.
-
-<b>Q. The sku display page has 2 buttons what are their function?</b>
-
-<b>A.</b> The Remove button will ONLY remove/delete all the SKUfrom the SKU table not from the Wordpress database. It won’t delete the products on your websites. It’s best to remove the SKU list after you export the CSV that contain th SKU. 
+<b>A.</b> The Remove button will ONLY remove/delete all the SKU from the SKU table not from the Wordpress database. It won’t delete the products on your websites. It’s best to remove the SKU list after you export the CSV that contain the SKU. 
 The Export CSV button will export the CSV. There will be no header on the CSV file.
 
 <b>Q. How do I upload the CSV file that contain the SKU for the products and keep the old SKU?</b>
 
-<b>A.</b> Before you upload the CSV file, you have to backup or export your current products because if you are not sure if you are uploading the CSV file correctly or make a mistake. You can always import the current products CSV file and redo this again correctly.You have to download a import plugin to upload the SKU CSV file. There are alot of import plugins for woocommerce to choose. I would download and try this import plugin: <a href=”https://wordpress.org/plugins/woocommerce-csvimport/”>Woocommerce CSV Import</a>. It’s simple to used and understand. 
+<b>A.</b> Before you upload the CSV file, you have to backup database or export your current products because if you are not sure if you are uploading the CSV file correctly or make a mistake. You can always import the current products CSV file and redo this again correctly. You can used WooCommerce products (CSV) importer, which is offer by WooCommerce plugin to upload the CSV file. Everytime you open a CVS file it will ask you to save the file twice, just save it twice.
 
 <b>Reminder</b>: 
 
-<b>***  Before you upload the CSV file, you have to backup or export your current products because if you are not sure if you are uploading the CSV file correctly or make a mistake. You can always import the current products CSV file and redo this again correctly. ***</b> 
-
-<b>*** Everytime you open a CVS file it will ask you to save the file twice, just save it twice. ***</b> 
+<b>***  Before you upload the the new CSV file, you have to backup database or export your current products ***</b> 
 
 <b>Q. What happened if I deactivate the plugin or delete the plugin?</b>
 
-<b>A.</b> If you deactivate the plugin it will stay on the plugin page and the SKU tables will be still on wordpress database. But if you delete/remove the plugin it will delete the folders, files and also the tables from the
-wordpress database.
+<b>A.</b> If you deactivate the plugin it will stay on the plugin page and the SKU tables will be still on wordpress database. But if you delete/remove the plugin it will delete the folders, files and also the tables from the wordpress database.
 
 == Languages and Software ==
 
