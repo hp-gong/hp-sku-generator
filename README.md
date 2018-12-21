@@ -13,7 +13,7 @@ Read the instructions on the sku-overview.pdf file for more in detail how to kee
 2. Upload the plugin from your WordPress Plugins section.
 3. Activate the plugin through the 'Plugins' menu in WordPress.
 
-<b>== Instructions ==
+<b>== Instructions ==</b>
 
 The instructions is in the master zip file
 
