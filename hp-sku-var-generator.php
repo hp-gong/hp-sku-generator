@@ -97,11 +97,11 @@ if(!class_exists('HP_Simple_SKU')){
 	   // activated in order for Simple SKU Generator plugin to run
 	   public function check_versions(){
 	    global $woocommerce;
-	    if (version_compare($woocommerce->version, '3.5.2', '<')){
+	    if (version_compare($woocommerce->version, '3.5.3', '<')){
 	    $url = admin_url('/plugins.php');
 	    require_once(ABSPATH . 'wp-admin/includes/plugin.php');
 	    deactivate_plugins( plugin_basename( __FILE__ ));
-	    wp_die( __('Simple SKU Generator is disabled.<br>Simple SKU Generator requires a minimum of WooCommerce v3.5.2.<br><a href="'.$url.'">Return to the Plugins section</a>'));
+	    wp_die( __('Simple SKU Generator is disabled.<br>Simple SKU Generator requires a minimum of WooCommerce v3.5.3.<br><a href="'.$url.'">Return to the Plugins section</a>'));
 	    }
 	    }
 
