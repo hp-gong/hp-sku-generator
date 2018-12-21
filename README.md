@@ -34,7 +34,10 @@ These are the 4 current browsers that currently support/display this plugin corr
 
 <b>Q. What are the 4 options to used to created the SKU?</b>
 
-<b>A.</b> (1) Month: 2 dights/Number(1): 1 dight/Number(3): 3 dight/Letter: 1 dight or Blank. (2) Year: 4 dight. (3) Date: 2 dight. (4) The amount of products you have: 4 dights.
+<b>A.</b> (1) Month: 2 dights/Number(1): 1 dight/Number(3): 3 dight/Letter: 1 dight or Blank. 
+          (2) Year: 4 dight. 
+          (3) Date: 2 dight. 
+          (4) The amount of products you have: 4 dights.
 
 <b>Q. What are the digits base on?</b>
 
