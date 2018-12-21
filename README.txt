@@ -31,8 +31,8 @@ The purpose of Simple SKU Generator plugin is to create SKU for the products.
 * Modify & Update & Add codes on the plugin.
 * Update README file.
 * Update Instructions for the sku-overview.pdf.
-* Compatible and tested with Wordpress - 5.0.2 
-* Compatible and tested with WooCommerce - 3.5.3
+* Compatible and tested with Wordpress: 5.0.2 
+* Compatible and tested with WooCommerce: 3.5.3
 * Maintenance.
 
 = Version 1.1.1 - 01-01-2018 =
