@@ -2,6 +2,10 @@
 
 Creating SKU for products
 
+<b>== Wordpress Page ==</b>
+
+https://wordpress.org/plugins/simple-sku-generator/
+
 <b>== Description ==</b>
 
 The purpose of Simple SKU Generator plugin is to create SKU for the products. 
