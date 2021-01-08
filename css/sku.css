@@ -1,0 +1,26 @@
+/* CSS style for the Simple SKU Generator - HP Gong  */
+
+
+input[type=reset]:not(.flat_btn).btn_grey1,input[type=submit]:not(.flat_btn).btn_grey1{display:inline-block;box-sizing:border-box;margin:5px;text-align:center;text-decoration:none;cursor:pointer;background-color:transparent;-webkit-transition:all .25s ease;-moz-transition:all .25s ease;-ms-transition:all .25s ease;-o-transition:all .25s ease;transition:all .25s ease;font-size:10px;font-size:0.9rem;line-height:15px;line-height:1.5rem;min-width:50px;min-width:5rem;padding:5px 5px;border-color:#666;border-width:1px;border-style:solid;border-radius:2.5px; border-color:#4f4f4f;background-color:#ababab;color:#ffffff;}
+
+input[type=reset]:not(.flat_btn).btn_grey1:hover,input[type=submit]:not(.flat_btn).btn_grey1:hover{background-color:#515151;color:#ffffff;}
+
+input[type="reset"]:not(.flat_btn).btn_gray1{display:inline-block;box-sizing:border-box;margin:5px;text-align:center;text-decoration:none;cursor:pointer;background-color:transparent;-webkit-transition:all .25s ease;-moz-transition:all .25s ease;-ms-transition:all .25s ease;-o-transition:all .25s ease;transition:all .25s ease;font-size:10px;font-size:0.9rem;line-height:15px;line-height:1.5rem;min-width:50px;min-width:5rem;padding:5px 5px;border-color:#666;border-width:1px;border-style:solid;border-radius:2.5px; border-color:#3f3f3f;background-color:#5b5b5b;color:#ffffff;}
+
+input[type="reset"]:not(.flat_btn).btn_gray1:hover{background-color:#737373;border-color:#6c6c6c;}
+
+span.at-required-highlight {color: red;}
+
+.at-required-highlight {color: red;}
+
+.at-error{color:red;margin:0;}.at-warning{color:orange;margin:0;}
+
+.at-required,.at-required+label::before{border-color:red!important;}
+
+p.at-warning{color: red;}
+
+.box{padding: 0px;display: none;margin-top: 0px;border: 0px solid #000;width: 90%;}
+
+li{display: list-item;list-style-position: inside;}
+
+#ol-tag{column-count:4; -o-column-count:4; -moz-column-count:4; -webkit-column-count:4; list-style-type: square;}
